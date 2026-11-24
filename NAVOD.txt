@@ -1,0 +1,41 @@
+AB0 Alert: instalovatelná verze pro telefon (PWA)
+=================================================
+
+Ve složce je hotová webová aplikace:
+  index.html             aplikace
+  manifest.webmanifest   název, ikona a barvy pro instalaci
+  sw.js                  offline režim
+  icons/                 ikony aplikace
+
+Aby šla appka nainstalovat, musí běžet na adrese https://. Stačí ji jednou
+nahrát na bezplatný hosting. Vyber si jednu z cest:
+
+A) Netlify (nejrychlejší, asi 3 minuty)
+  1. Založ si zdarma účet na https://app.netlify.com/signup a přihlas se.
+  2. Otevři https://app.netlify.com/drop
+  3. Přetáhni do okna CELOU tuhle složku (nebo ZIP soubor).
+  4. Dostaneš adresu typu https://neco-nahodneho.netlify.app
+     Název změníš v Project configuration > Change project name, např. ab0-alert.
+  Pozor: bez přihlášení Netlify web po hodině smaže.
+  Aktualizace: v detailu projektu přetáhni novou složku do záložky Deploys.
+
+B) GitHub Pages (trvalé, adresa https://tvujucet.github.io/ab0-alert)
+  1. Na https://github.com vytvoř nový veřejný repozitář "ab0-alert".
+  2. Add file > Upload files: nahraj obsah složky (index.html, manifest.webmanifest,
+     sw.js, .nojekyll a složku icons). Commit changes.
+  3. Settings > Pages > Source: Deploy from a branch, Branch: main, / (root) > Save.
+  4. Za 1 až 2 minuty běží na https://tvujucet.github.io/ab0-alert/
+
+Instalace do telefonu
+  iPhone: otevři adresu v Safari > tlačítko Sdílet > Přidat na plochu.
+  Android: otevři adresu v Chrome > ⋮ > Instalovat aplikaci (nebo Přidat na plochu).
+  Ikona AB0 Alert se objeví na ploše, appka se otevírá přes celou obrazovku
+  a po prvním otevření funguje i offline.
+
+Na prezentaci
+  V appce otevři menu ☰ > Sdílet (QR kód). Zobrazí se QR kód s adresou,
+  spolužáci ho naskenují a appku si hned nainstalují.
+
+Poznámka
+  Žebříček a trenérský přehled se v této verzi ukládají jen v daném telefonu
+  (místní testovací režim). Sdílený žebříček pro všechny běží ve verzi na claude.ai.
